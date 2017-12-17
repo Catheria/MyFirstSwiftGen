@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9A75F231FE50C3900C9E5B3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A75F221FE50C3900C9E5B3 /* Colors.swift */; };
+		E9A75F251FE50CDC00C9E5B3 /* MyAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A75F241FE50CDC00C9E5B3 /* MyAssets.swift */; };
+		E9A75F271FE50D3400C9E5B3 /* MyStoryboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A75F261FE50D3400C9E5B3 /* MyStoryboards.swift */; };
 		E9CE51B01FE505AA002BA6B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE51AF1FE505AA002BA6B8 /* AppDelegate.swift */; };
 		E9CE51B21FE505AA002BA6B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE51B11FE505AA002BA6B8 /* ViewController.swift */; };
 		E9CE51B51FE505AA002BA6B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CE51B31FE505AA002BA6B8 /* Main.storyboard */; };
 		E9CE51B71FE505AA002BA6B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9CE51B61FE505AA002BA6B8 /* Assets.xcassets */; };
 		E9CE51BA1FE505AA002BA6B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CE51B81FE505AA002BA6B8 /* LaunchScreen.storyboard */; };
+		E9CE51C21FE50820002BA6B8 /* colors.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9CE51C11FE50820002BA6B8 /* colors.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E9A75F221FE50C3900C9E5B3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		E9A75F241FE50CDC00C9E5B3 /* MyAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAssets.swift; sourceTree = "<group>"; };
+		E9A75F261FE50D3400C9E5B3 /* MyStoryboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStoryboards.swift; sourceTree = "<group>"; };
 		E9CE51AC1FE505AA002BA6B8 /* MyFirstSwiftGen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstSwiftGen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9CE51AF1FE505AA002BA6B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9CE51B11FE505AA002BA6B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,7 @@
 		E9CE51B61FE505AA002BA6B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9CE51B91FE505AA002BA6B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9CE51BB1FE505AA002BA6B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9CE51C11FE50820002BA6B8 /* colors.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = colors.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,10 @@
 		E9CE51AE1FE505AA002BA6B8 /* MyFirstSwiftGen */ = {
 			isa = PBXGroup;
 			children = (
+				E9A75F261FE50D3400C9E5B3 /* MyStoryboards.swift */,
+				E9A75F241FE50CDC00C9E5B3 /* MyAssets.swift */,
+				E9A75F221FE50C3900C9E5B3 /* Colors.swift */,
+				E9CE51C11FE50820002BA6B8 /* colors.txt */,
 				E9CE51AF1FE505AA002BA6B8 /* AppDelegate.swift */,
 				E9CE51B11FE505AA002BA6B8 /* ViewController.swift */,
 				E9CE51B31FE505AA002BA6B8 /* Main.storyboard */,
@@ -71,6 +83,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9CE51BE1FE505AA002BA6B8 /* Build configuration list for PBXNativeTarget "MyFirstSwiftGen" */;
 			buildPhases = (
+				E9CE51C41FE50AB3002BA6B8 /* ShellScript */,
 				E9CE51A81FE505AA002BA6B8 /* Sources */,
 				E9CE51A91FE505AA002BA6B8 /* Frameworks */,
 				E9CE51AA1FE505AA002BA6B8 /* Resources */,
@@ -125,11 +138,28 @@
 			files = (
 				E9CE51BA1FE505AA002BA6B8 /* LaunchScreen.storyboard in Resources */,
 				E9CE51B71FE505AA002BA6B8 /* Assets.xcassets in Resources */,
+				E9CE51C21FE50820002BA6B8 /* colors.txt in Resources */,
 				E9CE51B51FE505AA002BA6B8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E9CE51C41FE50AB3002BA6B8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swiftgen xcassets -t swift3 $TARGET_NAME/Assets.xcassets --output $TARGET_NAME/MyAssets.swift\nif [[ $? != 0 ]] ; then\ncat << EOM\nerror: Failed to run the swiftgen command. If you do not have swiftgen installed, you can install it via homebrew:\n\n$ brew update\n$ brew install swiftgen\n\nFor more information, visit 'https://github.com/AliSoftware/SwiftGen'.\nEOM\nexit 1\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E9CE51A81FE505AA002BA6B8 /* Sources */ = {
@@ -137,6 +167,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9CE51B21FE505AA002BA6B8 /* ViewController.swift in Sources */,
+				E9A75F231FE50C3900C9E5B3 /* Colors.swift in Sources */,
+				E9A75F271FE50D3400C9E5B3 /* MyStoryboards.swift in Sources */,
+				E9A75F251FE50CDC00C9E5B3 /* MyAssets.swift in Sources */,
 				E9CE51B01FE505AA002BA6B8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
